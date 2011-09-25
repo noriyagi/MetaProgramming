@@ -1,13 +1,7 @@
-class Paragraph
-  def initialize(text)
-    @text = text
-  end
+paragraph = "any string can be a paragraph"
 
-  def title?; @text.upcase == @text; end
-  def reverse; @text.reverse; end
-  def upcase; @text.upcase; end
+def paragraph.title?
+  self.upcase == self
 end
 
-def index(paragraph)
-  add_to_index(paragraph) if paragraph.title?
-end
+index(paragraph)
